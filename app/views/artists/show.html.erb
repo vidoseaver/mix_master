@@ -1,0 +1,5 @@
+<h1><%= @artist.name %></h1>
+<img src=<%=@artist.image_path%>   alt= <%= @artist.name %>   />
+<br>
+<%= link_to "edit", edit_artist_path(@artist) %>
+<%= link_to "remove artist", artist_path(@artist), method: :delete %>
