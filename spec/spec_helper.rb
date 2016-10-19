@@ -3,7 +3,13 @@
 # The generated `.rspec` file contains `--require spec_helper` which will cause
 # this file to always be loaded, without a need to explicitly require it in any
 # files.
-#
+def eminem
+  Artist.create(name:"eminem", image_path:"http://gazettereview.com/wp-content/uploads/2015/12/Eminem-Featured-image-700x420.jpg")
+end
+
+def dre
+  Artist.create(name:"dre", image_path:"http://cache.umusic.com/_images/facebook/drdre/og-dre.jpg")
+end
 # Given that it is always loaded, you are encouraged to keep this file as
 # light-weight as possible. Requiring heavyweight dependencies from this file
 # will add to the boot time of your test suite on EVERY test run, even for an
@@ -23,7 +29,7 @@ RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
     # This option will default to `true` in RSpec 4. It makes the `description`
     # and `failure_message` of custom matchers include text for helper methods
-    # defined using `chain`, e.g.:
+    # defined using `dirchain`, e.g.:
     #     be_bigger_than(2).and_smaller_than(4).description
     #     # => "be bigger than 2 and smaller than 4"
     # ...rather than:

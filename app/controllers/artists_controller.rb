@@ -34,7 +34,7 @@ class ArtistsController < ApplicationController
   def destroy
     artist = Artist.find(id)
     artist.delete
-    redirect_to artists
+    redirect_to artists_path
   end
 
 
